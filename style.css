@@ -1,0 +1,446 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffdf7;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #173f35;
+    padding: 18px 0;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f5c66a !important;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #f5c66a;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5),
+                        rgba(0, 0, 0, 0.6)),
+        url("https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.subtitle {
+    color: #ffd27a;
+    font-size: 14px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 7vw, 76px);
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.hero-text {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.explore-btn {
+    background-color: #e88b27;
+    color: white;
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-weight: bold;
+}
+
+.explore-btn:hover {
+    background-color: #c66d15;
+    color: white;
+}
+
+/* Introduction */
+.introduction {
+    background-color: #fff4df;
+}
+
+.introduction h2 {
+    color: #174b3d;
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.introduction p {
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.9;
+    font-size: 17px;
+}
+
+/* Section Headings */
+.section-heading {
+    color: #174b3d;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.section-description {
+    color: #666;
+    line-height: 1.7;
+}
+
+/* Culture Cards */
+.culture-section {
+    background-color: #fffdf7;
+}
+
+.culture-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.culture-card:hover {
+    transform: translateY(-7px);
+}
+
+.culture-card img {
+    height: 230px;
+    object-fit: cover;
+}
+
+.culture-card .card-title {
+    color: #174b3d;
+    font-weight: bold;
+}
+
+.card-link {
+    color: #bc681d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Festival Section */
+.festival-section {
+    background-color: #fff3df;
+}
+
+.festival-box {
+    padding: 25px 10px;
+    background-color: white;
+    border-radius: 12px;
+    border-bottom: 4px solid #e88b27;
+    height: 100%;
+}
+
+.festival-box h5 {
+    color: #174b3d;
+    font-weight: bold;
+}
+
+.festival-box p {
+    margin-bottom: 0;
+    color: #666;
+}
+
+/* Food Section */
+.food-section {
+    background-color: white;
+}
+
+.food-box {
+    background-color: #f6f1e7;
+    padding: 30px 15px;
+    border-radius: 12px;
+    height: 100%;
+}
+
+.food-box h4 {
+    color: #a95718;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+/* States Section */
+.states-section {
+    background-color: #f0f5ee;
+}
+
+.state-box {
+    background-color: #174b3d;
+    color: white;
+    padding: 25px 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.state-box:hover {
+    background-color: #bc681d;
+}
+
+/* Footer */
+.footer {
+    background-color: #173f35;
+    color: white;
+    padding: 35px 0 20px;
+}
+
+.footer h4 {
+    color: #f5c66a;
+    font-weight: bold;
+}
+
+.copyright {
+    border-top: 1px solid #557267;
+    padding-top: 15px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px 18px;
+    }
+
+    .hero {
+        min-height: 430px;
+        padding: 50px 15px;
+    }
+
+    .subtitle {
+        letter-spacing: 2px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    .section-heading,
+    .introduction h2 {
+        font-size: 28px;
+    }
+}
+
+
+
+/* ============ COMMON GALLERY STYLES ============ */
+
+.gallery-section {
+    padding: 65px 0;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.section-heading h2 {
+    color: #14532d;
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.section-heading p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+
+/* ============ SECTION BACKGROUNDS ============ */
+
+.heritage-section {
+    background-color: #fff8ed;
+}
+
+.festivals-gallery {
+    background-color: #ffffff;
+}
+
+.art-gallery {
+    background-color: #fff1dc;
+}
+
+
+/* ============ GALLERY CARDS ============ */
+
+.gallery-card {
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.gallery-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14);
+}
+
+
+/* ============ GALLERY IMAGES ============ */
+
+.gallery-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* ============ CARD TEXT ============ */
+
+.gallery-body {
+    padding: 18px;
+}
+
+.gallery-body h5 {
+    color: #b45309;
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.gallery-body p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+
+/* ============ RESPONSIVE DESIGN ============ */
+
+@media (max-width: 991px) {
+    .gallery-section {
+        padding: 50px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .gallery-card img {
+        height: 220px;
+    }
+}
+
+@media (max-width: 575px) {
+    .gallery-section {
+        padding: 40px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 26px;
+    }
+
+    .gallery-card img {
+        height: 230px;
+    }
+
+    .gallery-body {
+        padding: 15px;
+    }
+}
+
+/* Regional Food and State Image Cards */
+
+.food-section {
+    background-color: #ffffff;
+}
+
+.states-section {
+    background-color: #f0f5ee;
+}
+
+.region-card {
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.region-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14);
+}
+
+.region-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    display: block;
+}
+
+.region-card-body {
+    padding: 20px 16px;
+}
+
+.region-card-body h4 {
+    color: #a95718;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.region-card-body p {
+    color: #555555;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+@media (max-width: 575px) {
+    .region-card img {
+        height: 230px;
+    }
+}
